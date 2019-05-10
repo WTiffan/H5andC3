@@ -2,48 +2,86 @@
 <html>
 <head>
 	<title>h5和c3的新特性</title>
+	<style type="text/css">
+		#border_radius {
+			width: 300px;
+			height: 200px;
+			background-color: red;
+			border-radius: 20px;
+			border-top-left-radius: 50px;
+			border-top-right-radius: 50px;
+			border-bottom-left-radius: 50px;
+			border-bottom-right-radius: 50px;  
+		}
+	</style>
 </head>
 <body>
 	<!-- <div> -->
-		input的email类型：
-		<form action="wwww.baidu.com" method="post">
-			<input type="email" placeholder="请输入邮箱" />
-			<button type="submit">提交</button>
-		</form>
+	input的email类型：
+	<form action="wwww.baidu.com" method="post">
+		<input type="email" placeholder="请输入邮箱" />
+		<button type="submit">提交</button>
+	</form>
 
-		input的url类型：
-		<form action="wwww.baidu.com" method="post">
-			<input type="url" placeholder="请输入网址" />
-			<button type="submit">提交</button>
-		</form>
+	input的url类型：
+	<form action="wwww.baidu.com" method="post">
+		<input type="url" placeholder="请输入网址" />
+		<button type="submit">提交</button>
+	</form>
 
-		<p></p>
-		input的Date类型：
-		<br/>
-		1. date
-		<input type="date" name="input_date" />
-		<br/>
-		2. month
-		<input type="month" name="input_month" />
-		<br/>
-		3. week
-		<input type="week" name="input_week">
-		<br/>
-		4. time
-		<input type="time" name="input_time">
-		<br/>
-		5. datetime（浏览器应该不支持）
-		<form action="www.baidu.com" method="post">
-			<input type="datetime" name="input_datetime" />
-			<button type="submit">提交</button>
-		</form>
-		<br/>
-		6. datetime-local
-		<input type="datetime-local" name="user_date" />
+	<p></p>
+	input的Date类型：
+	<br/>
+	1. date
+	<input type="date" name="input_date" />
+	<br/>
+	2. month
+	<input type="month" name="input_month" />
+	<br/>
+	3. week
+	<input type="week" name="input_week">
+	<br/>
+	4. time
+	<input type="time" name="input_time">
+	<br/>
+	5. datetime（浏览器应该不支持）
+	<form action="www.baidu.com" method="post">
+		<input type="datetime" name="input_datetime" />
+		<button type="submit">提交</button>
+	</form>
+	<br/>
+	6. datetime-local
+	<input type="datetime-local" name="user_date" />
 
-		<p></p>
-		input的search类型
-		<input type="search" name="input_search"/>
+	<p></p>
+	input的search类型
+	<input type="search" name="input_search"/>
+
+	<p></p>
+	<!-- 音频 -->
+	<!-- 给定“播放”、“音量”、“进度”控制 ---controls -->
+	<!-- 使音乐重复播放 ---loop -->
+	<audio src="" controls="controls" loop="loop">
+		<!-- 中间插入的文本 仅在用户的浏览器不支持<audio></audio>标签时显示 -->	
+		你该换浏览器了朋友……		
+	</audio>
 	<!-- </div> -->
+
+	<p></p>
+	CSS3边框
+	<br/>
+	border-radius
+	<!-- border-radius 是一个简写形式，用于定义4个角的radius值
+		若想要单单设置某一个角的radius值，可用
+			border-top-left-radius
+			border-top-right-radius
+			border-bottom-right-radius
+			border-bottom-left-radius
+		进行对某个角的border-radio属性进行编辑
+	 -->
+	 <div id="border_radius"></div>
+	 <!-- em 与 px
+		1em = 浏览器默认的字体像素px大小
+	  -->
 </body>
 </html>
